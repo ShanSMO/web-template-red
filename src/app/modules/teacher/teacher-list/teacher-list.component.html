@@ -1,0 +1,73 @@
+<div style="padding: 20px;">
+  <div class="row" style="margin: 0 0 10px;">
+    <div style="margin-right: 5px;">
+      <label>Academic Level</label>
+      <select>
+        <option>Select Academic Level</option>
+        <option *ngFor="let academicLevel of academicLevels" [value]="academicLevel.id">{{academicLevel.name}}</option>
+      </select>
+    </div>
+    <div style="margin-right: 5px;">
+      <label>Academic Stream</label>
+      <select>
+        <option>Select Academic Level</option>
+        <option *ngFor="let syllubusStream of syllubusStreams" [value]="syllubusStream.stream_id">{{syllubusStream.stream_name}}</option>
+      </select>
+    </div>
+    <div style="margin-right: 5px;">
+      <label>Class</label>
+      <select>
+        <option>Select Class</option>
+        <option *ngFor="let grade of grades">Grade {{grade}}</option>
+      </select>
+    </div>
+    <div style="margin-right: 5px;">
+      <label>Subject</label>
+      <select>
+        <option>Select Subject</option>
+        <option>Physics</option>
+      </select>
+    </div>
+
+    <div style="margin-right: 5px;">
+      <label>Keyword</label>
+      <input type="text" placeholder="Enter any keyword">
+    </div>
+  </div>
+
+  <div>
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>Ref ID</th>
+        <th>Full Name</th>
+        <th>Contact Number</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let teacher of teachers;let id = index;" class="stu-t-tr">
+        <th>{{id + 1}}</th>
+        <td>{{teacher.ref_id}}</td>
+        <td>{{teacher.full_name}}</td>
+        <td>{{teacher.contact_number}}</td>
+        <td style="text-align: center">
+          <div class="row" style="margin:0 ">
+        <span class="act-ic-span">
+          <i class="fa fa-trash-o t-act-ic" style=""></i>
+        </span>
+            <span class="act-ic-img-span">
+          <i class="fa fa-picture-o t-act-img-ic" style=""></i>
+        </span>
+            <span class="act-ic-img-span">
+          <i class="fa fa-address-card-o t-act-img-ic" style=""></i>
+        </span>
+
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

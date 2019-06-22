@@ -1,0 +1,58 @@
+.menu-container
+  width: 100%
+  height: 80px
+  background-color: rgb(32, 32, 32)
+  background-image: linear-gradient(45deg, #464646 25%, transparent 25%, transparent 75%, #464646 75%, #464646), linear-gradient(45deg, #464646 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32))
+  background-size: 2px 2px, 2px 2px, 2px 2px
+  background-position: 0px 0px, 5px 5px, 0px 0px
+  border-bottom: 3px solid #11aa66
+  position: fixed
+  z-index: 10
+  top: 0
+  ul
+    height: 100%
+    padding: 5px
+
+    li
+      text-align: center
+      padding-top: 10px
+      .fa
+        font-size: 25px
+        color: #fff
+        font-weight: 400
+    label
+      color: #aaa
+      font-weight: 400
+      font-size: 12px
+
+
+.menu-itm-bg
+  width: 80px
+  height: 100%
+  background: rgba(97, 95, 95, 0.4)
+  display: inline-block
+  cursor: pointer
+
+.br-right
+  border-right: 2px solid
+
+.menu-itm-bg:hover
+  cursor: pointer
+  .fa
+    color: #13c174 !important
+  label
+    color: #13c174 !important
+    cursor: pointer !important
+
+
+.date-time
+  right: 15px
+  position: absolute
+  font-size: 20px
+  color: #11ca78
+  top: 10px
+  font-weight: 600
+  padding: 13px
+  border-radius: 5px
+  background: rgb(47, 46, 46)
+  box-shadow: 0 0 3px #fff

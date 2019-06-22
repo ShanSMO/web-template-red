@@ -1,0 +1,64 @@
+<div style="padding: 15px;">
+  <div class="row" style="margin: 0;">
+    <div style="margin-right: 5px;">
+      <label>Academic Level</label>
+      <select>
+        <option>Select Academic Level</option>
+        <option *ngFor="let academicLevel of academicLevels" [value]="academicLevel.id">{{academicLevel.name}}</option>
+      </select>
+    </div>
+    <div style="margin-right: 5px;">
+      <label>Academic Stream</label>
+      <select>
+        <option>Select Academic Level</option>
+        <option *ngFor="let syllubusStream of syllubusStreams" [value]="syllubusStream.stream_id">{{syllubusStream.stream_name}}</option>
+      </select>
+    </div>
+    <div style="margin-right: 5px;">
+      <label>Class</label>
+      <select>
+        <option>Select Class</option>
+        <option *ngFor="let grade of grades">Grade {{grade}}</option>
+      </select>
+    </div>
+    <div style="margin-right: 5px;">
+      <label>Subject</label>
+      <select>
+        <option>Select Subject</option>
+        <option>Physics</option>
+      </select>
+    </div>
+
+    <div style="margin-right: 5px;">
+      <label>Keyword</label>
+      <input type="text" placeholder="Enter any keyword">
+    </div>
+  </div>
+
+  <div class="clearfix" style="margin-bottom: 15px;"></div>
+  <div>
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th>#</th>
+          <th>Student Name</th>
+          <th>ID</th>
+          <th>Attendance</th>
+          <th>Subject</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let attendance of studentAttendances;let id = index;">
+          <th>{{id + 1}}</th>
+          <td>{{attendance.name}}</td>
+          <td>{{attendance.ref_id}}</td>
+          <td [class]="attendance.att_status.toLowerCase() + ' att-stat' ">{{attendance.att_status}}</td>
+          <td>{{attendance.subject}}</td>
+        </tr>
+        </tbody>
+      </table>
+  </div>
+
+
+
+</div>

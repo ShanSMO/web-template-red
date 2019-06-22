@@ -1,0 +1,85 @@
+<div class="div-parent">
+
+  <div class="wrapper row">
+    <!-- Side Menu -->
+    <div class="side-menu">
+
+      <div class="sec-prof">
+        <div class="p-img-d">
+          <img src="assets/images/prf-img.jpg">
+        </div>
+        <div class="p-name">
+          <div>
+            <p>S.S Madushanka</p>
+            <p class="p-loc">
+              <i class="fa fa-map-marker"></i> &nbsp; Kalutara South, Sri Lanka
+            </p>
+          </div>
+        </div>
+
+        <div class="set-ngs">
+          <span data-toggle="dropdown" >
+            <i class="fa fa-gear" ></i>
+          </span>
+          <div class="dropdown-menu dropdown-menu-right drp-dwn">
+            <ul class="usr-setngs">
+              <li><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;&nbsp; My Profile</li>
+              <li><i class="fa fa-cog" aria-hidden="true"></i>&nbsp;&nbsp; User Settings</li>
+              <li><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;&nbsp; Sign Out</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Side Menu Items -->
+      <div>
+        <ul class="menu-item-group">
+          <li class="main-menu">
+            <a href="#">
+              <i class="fa fa-dashboard"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="sub-menu">
+            <a>
+              <i class="fa fa-window-restore" aria-hidden="true"></i>
+              <span>Layouts</span>
+            </a>
+          </li>
+          <li class="sub-menu">
+            <a>
+              <i class="fa fa-comments-o" aria-hidden="true"></i>
+              <span>Messages</span>
+            </a>
+          </li>
+          <li class="sub-menu">
+            <a>
+              <i class="fa fa-television" aria-hidden="true"></i>
+              <span>Themes</span>
+            </a>
+          </li>
+          <li class="sub-menu">
+            <a>
+              <i class="fa fa-wrench" aria-hidden="true"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="sub-menu">
+            <a>
+              <i class="fa fa-link" aria-hidden="true"></i>
+              <span>Connections</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Container -->
+    <div class="container-l">
+      <div class="tool-bar"></div>
+      <div class="container-2 animated fadeInDown ">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+
+</div>
